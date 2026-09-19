@@ -2,10 +2,11 @@ const profile = {
   name: "Ruma Choudhury",
   role: "Full-Stack Developer",
   stack: "MERN Stack · React.js · Next.js · TypeScript",
-  location: "New York, United States",
+  location: "Ronkonkoma, NY 11779",
   email: "rumachoudhury7862@gmail.com",
   github: "https://github.com/rumachoudhury",
   linkedin: "https://www.linkedin.com/in/ruma-choudhury",
+  resume: "/resume.html",
 };
 
 const projects = [
@@ -136,6 +137,14 @@ function Home() {
           <a href="#work">Work</a>
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
+          <a
+            className="resume-nav-link"
+            href={profile.resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
           <ExternalLink href={profile.github}>GitHub</ExternalLink>
           <ExternalLink href={profile.linkedin}>LinkedIn</ExternalLink>
         </nav>
@@ -169,6 +178,14 @@ function Home() {
             <ExternalLink className="outline-button" href={profile.linkedin}>
               LinkedIn
             </ExternalLink>
+            <a
+              className="outline-button"
+              href={profile.resume}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume <Arrow />
+            </a>
           </div>
         </div>
         <div className="hero-art" aria-hidden="true">

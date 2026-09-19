@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruma Choudhury | Resume</title>
+    <style>
+      :root {
+        color: #182033;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #e9edf5;
+        margin: 0;
+      }
+      .resume {
+        background: #fff;
+        margin: 32px auto;
+        max-width: 850px;
+        min-height: 1100px;
+        padding: 52px 64px;
+      }
+      header {
+        align-items: flex-start;
+        border-bottom: 2px solid #182033;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 22px;
+      }
+      h1 {
+        font-size: 39px;
+        letter-spacing: -1.8px;
+        margin: 0 0 8px;
+      }
+      .role {
+        color: #5c55d9;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.45;
+        margin: 0;
+        max-width: 380px;
+      }
+      .contact {
+        color: #566074;
+        font-size: 10px;
+        line-height: 1.8;
+        text-align: right;
+      }
+      a {
+        color: inherit;
+      }
+      section {
+        margin-top: 23px;
+      }
+      h2 {
+        border-bottom: 1px solid #d8deea;
+        color: #5c55d9;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin: 0 0 11px;
+        padding-bottom: 7px;
+        text-transform: uppercase;
+      }
+      p {
+        color: #536078;
+        font-size: 11px;
+        line-height: 1.55;
+        margin: 0;
+      }
+      .skills {
+        display: grid;
+        gap: 7px 24px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .skill strong {
+        color: #182033;
+        display: block;
+        font-size: 11px;
+        margin-bottom: 2px;
+      }
+      .project {
+        border-left: 3px solid #d8d2ff;
+        margin-bottom: 11px;
+        padding-left: 12px;
+      }
+      .project h3 {
+        color: #182033;
+        font-size: 12px;
+        margin: 0 0 2px;
+      }
+      .project h3 span {
+        color: #7a8396;
+        font-size: 9px;
+        font-weight: 400;
+        margin-left: 7px;
+      }
+      .project .links {
+        color: #5c55d9;
+        font-size: 10px;
+        margin-top: 2px;
+      }
+      ul {
+        color: #536078;
+        font-size: 11px;
+        line-height: 1.55;
+        margin: 0;
+        padding-left: 16px;
+      }
+      .training-title,
+      .education-title {
+        color: #182033;
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      .meta {
+        color: #7a8396;
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+      .print-note {
+        color: #7a8396;
+        font-size: 10px;
+        margin: 0 auto 12px;
+        max-width: 850px;
+        text-align: right;
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .resume {
+          margin: 0;
+          padding: 36px 48px;
+        }
+        .print-note {
+          display: none;
+        }
+      }
+      @media (max-width: 600px) {
+        .resume {
+          margin: 0;
+          padding: 32px 22px;
+        }
+        header {
+          display: block;
+        }
+        .contact {
+          margin-top: 16px;
+          text-align: left;
+        }
+        .skills {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p class="print-note">
+      Use your browser's Print command to save this resume as a PDF.
+    </p>
+    <main class="resume">
+      <header>
+        <div>
+          <h1>Ruma Choudhury</h1>
+          <p class="role">
+            MERN Stack Developer | Full-Stack Developer | React.js | Next.js |
+            TypeScript
+          </p>
+        </div>
+        <div class="contact">
+          Ronkonkoma, NY 11779<br />(929) 386-4965<br /><a
+            href="mailto:rumachoudhury7862@gmail.com"
+            >rumachoudhury7862@gmail.com</a
+          ><br /><a href="https://github.com/rumachoudhury">GitHub</a> |
+          <a href="https://www.linkedin.com/in/ruma-choudhury">LinkedIn</a> |
+          <a href="/">Portfolio</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <p>
+          MERN Stack / Full-Stack Developer with 2+ years of hands-on,
+          project-based experience building responsive, user-focused web
+          applications. Skilled in React.js, Next.js, JavaScript, TypeScript,
+          Tailwind CSS, Node.js, Express.js, and MongoDB, with experience
+          developing modern frontend interfaces and full-stack applications.
+          Strong problem-solving, debugging, and collaboration skills, with a
+          passion for creating clean, scalable, accessible, and user-friendly
+          web experiences.
+        </p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <strong>Frontend</strong>
+            <p>
+              HTML5, CSS3, JavaScript, TypeScript, React.js, Next.js, Tailwind
+              CSS, Sass
+            </p>
+          </div>
+          <div class="skill">
+            <strong>UI &amp; Libraries</strong>
+            <p>Shadcn/ui, Material UI, Ant Design, DaisyUI, Framer Motion</p>
+          </div>
+          <div class="skill">
+            <strong>Backend &amp; Database</strong>
+            <p>Node.js, Express.js, MongoDB, Mongoose, JWT, Prisma</p>
+          </div>
+          <div class="skill">
+            <strong>Tools &amp; Testing</strong>
+            <p>Git, GitHub, VS Code, Vercel, Postman, Cypress</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Experience</h2>
+        <div class="project">
+          <h3>Digital Tech Hub <span>Full-Stack E-Commerce Platform</span></h3>
+          <p>Technologies: Next.js, React, TypeScript, Tailwind CSS</p>
+          <p class="links">
+            <a href="https://github.com/rumachoudhury">GitHub</a> | Live Demo
+          </p>
+        </div>
+        <div class="project">
+          <h3>
+            Monorepo E-Commerce App <span>E-Commerce Management Platform</span>
+          </h3>
+          <p>Technologies: Next.js, React, TypeScript, Tailwind CSS</p>
+          <p class="links">
+            <a href="https://github.com/rumachoudhury/monorepo-ecommerce-app"
+              >GitHub</a
+            >
+            | Live Demo
+          </p>
+        </div>
+        <div class="project">
+          <h3>Bright Path Therapy <span>Responsive Web Application</span></h3>
+          <p>Technologies: Next.js, React, TypeScript, Tailwind CSS</p>
+          <p class="links">
+            <a href="https://github.com/rumachoudhury/bright-path-therapy"
+              >GitHub</a
+            >
+            | Live Demo
+          </p>
+        </div>
+        <div class="project">
+          <h3>High Paid Jobs <span>Job Portal</span></h3>
+          <p>Technologies: Next.js, TypeScript</p>
+          <p class="links">Live Demo</p>
+        </div>
+        <div class="project">
+          <h3>Fresh Bucket <span>Online Grocery Store</span></h3>
+          <p>Technologies: React, Tailwind CSS</p>
+          <p class="links">Live Demo</p>
+        </div>
+        <div class="project">
+          <h3>Bootstrap Fruit-Burst <span>Responsive Web Application</span></h3>
+          <p>Technologies: HTML, CSS, Bootstrap</p>
+          <p class="links">Live Demo</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Training</h2>
+        <p class="training-title">
+          MERN Full-Stack Software Engineer — TS4U Bootcamp
+        </p>
+        <p class="meta">Online | January 2024 – July 2025</p>
+        <ul>
+          <li>
+            Completed an intensive, project-based full-stack software
+            engineering program.
+          </li>
+          <li>
+            Built and deployed responsive web applications using React, Next.js,
+            TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB.
+          </li>
+          <li>
+            Practiced Git/GitHub workflows, Agile development, debugging,
+            testing, code reviews, and technical presentations.
+          </li>
+          <li>
+            Collaborated on projects and delivered features within project
+            timelines.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p class="education-title">Bachelor’s Degree</p>
+        <p>Government Women’s College, Sylhet, Bangladesh</p>
+      </section>
+      <section>
+        <h2>Certification</h2>
+        <p>
+          <strong>MERN Full-Stack Software Engineer</strong> — TS4U Bootcamp |
+          July 2025
+        </p>
+      </section>
+      <section>
+        <h2>Languages</h2>
+        <p>English · Bengali</p>
+      </section>
+    </main>
+  </body>
+</html>
