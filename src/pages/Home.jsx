@@ -172,16 +172,17 @@ function Home() {
           </div>
         </div>
         <div className="hero-art" aria-hidden="true">
+          <div className="hero-ring ring-one" />
+          <div className="hero-ring ring-two" />
+          <div className="hero-core" />
           <div className="orb orb-one" />
           <div className="orb orb-two" />
           <div className="orb orb-three" />
-          <span>
-            FULL
-            <br />
-            STACK
-            <br />
-            SYSTEMS
-          </span>
+          <div className="hero-label">
+            <span>FULL STACK</span>
+            <b>SYSTEMS</b>
+            <small>RUMA / 001</small>
+          </div>
         </div>
       </section>
 
