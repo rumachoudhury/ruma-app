@@ -33,11 +33,12 @@ export default function ProjectCard({ project }) {
 				</div>
 				<div className="project-actions">
 					<ExternalLink className="project-link" href={project.url}>
-						{project.repoUrl ? "View live project" : "View repository"} <Arrow />
+						View live project
+						<Arrow />
 					</ExternalLink>
 					{project.repoUrl && (
 						<ExternalLink className="project-link secondary" href={project.repoUrl}>
-							Code <Arrow />
+							Code<Arrow />
 						</ExternalLink>
 					)}
 				</div>
