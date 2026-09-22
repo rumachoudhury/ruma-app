@@ -2,7 +2,6 @@
 
 A modern, responsive developer portfolio built with **React 19 and Vite**, showcasing selected projects, technical skills, and experience.
 
-**Live Portfolio:** https://ruma-portfolio-site.vercel.app/
 ---
 
 ## Selected Work
