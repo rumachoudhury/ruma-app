@@ -440,6 +440,43 @@ nav a:focus-visible {
   margin: 0 auto 52px;
   max-width: 1340px;
 }
+.about-section .section-heading,
+.expertise-section .section-heading,
+.services-section .section-heading,
+.work-section .section-heading,
+.contact-section .contact-top {
+  animation: rise-in 0.7s both;
+}
+.about-grid,
+.expertise-list,
+.services-grid,
+.project-grid,
+.contact-section .email-link,
+.contact-section .footer-links,
+.contact-section .footer-bottom {
+  animation: rise-in 0.7s 0.12s both;
+}
+.about-grid {
+  animation-delay: 0.16s;
+}
+.expertise-list {
+  animation-delay: 0.2s;
+}
+.services-grid {
+  animation-delay: 0.24s;
+}
+.project-grid {
+  animation-delay: 0.16s;
+}
+.contact-section .email-link {
+  animation-delay: 0.18s;
+}
+.contact-section .footer-links {
+  animation-delay: 0.25s;
+}
+.contact-section .footer-bottom {
+  animation-delay: 0.32s;
+}
 .eyebrow,
 .index-label {
   color: var(--muted);
