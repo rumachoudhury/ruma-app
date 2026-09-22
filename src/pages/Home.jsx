@@ -1,4 +1,8 @@
+import { useState } from "react";
+import About from "../components/portfolio/About";
+import Expertise from "../components/portfolio/Expertise";
 import Projects from "../components/portfolio/Projects";
+import Services from "../components/portfolio/Services";
 import { PROFILE as profile } from "../data/projects";
 
 function Arrow() {
@@ -13,14 +17,20 @@ function ExternalLink({ href, children, className = "" }) {
 }
 
 function Home() {
+  const [isLight, setIsLight] = useState(false);
+
   return (
-    <main className="portfolio">
+    <main className={`portfolio ${isLight ? "light-theme" : ""}`}>
       <header className="site-header">
         <a className="wordmark" href="#top">
           RUMA<span>/</span>DEV
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#work">Work</a>
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#services">Services</a>
+          <a href="#work">Projects</a>
           <a href="#contact">Contact</a>
           <a
             className="resume-nav-link"
@@ -32,6 +42,14 @@ function Home() {
           </a>
           <ExternalLink href={profile.github}>GitHub</ExternalLink>
           <ExternalLink href={profile.linkedin}>LinkedIn</ExternalLink>
+          <button
+            className="theme-toggle"
+            type="button"
+            onClick={() => setIsLight((current) => !current)}
+            aria-label={`Switch to ${isLight ? "dark" : "light"} theme`}
+          >
+            {isLight ? "Dark" : "Light"}
+          </button>
         </nav>
       </header>
 
@@ -42,20 +60,22 @@ function Home() {
             <span /> Available for Collaboration
           </p>
           <h1>
-            Ruma
+            Hi, I&apos;m
             <br />
-            <em>Choudhury</em>
+            <em>Ruma Choudhury</em>
+            <span className="typing-cursor" aria-hidden="true">|</span>
           </h1>
           <p className="role">
-            {profile.role} <b>—</b> {profile.stack}
+            MERN Stack Developer
           </p>
           <p className="hero-copy">
-            I build typed, end-to-end web systems — from the database schema to
-            the last pixel of the interface.
+            I create modern, scalable web applications using MongoDB, Express,
+            React, and Node.js. Passionate about clean code and exceptional
+            user experiences.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href="#work">
-              See the work <Arrow />
+              View Projects <Arrow />
             </a>
             <ExternalLink className="outline-button" href={profile.github}>
               GitHub
@@ -69,7 +89,7 @@ function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              Resume <Arrow />
+              Contact Me <Arrow />
             </a>
           </div>
         </div>
@@ -87,6 +107,10 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <About />
+      <Expertise />
+      <Services />
 
       <section className="work-section" id="work">
         <div className="section-heading">
