@@ -3,15 +3,6 @@
 A modern, responsive developer portfolio built with **React 19 and Vite**, showcasing selected projects, technical skills, and experience.
 
 **Live Portfolio:** https://ruma-portfolio-site.vercel.app/
-
----
-
-## About
-
-I'm a Full-Stack Developer focused on building modern, responsive, and user-friendly web applications.
-
-I work with **React, Next.js, TypeScript, Node.js, Express, MongoDB, and modern UI technologies** to create clean and practical digital experiences.
-
 ---
 
 ## Selected Work
@@ -141,7 +132,6 @@ src/
 public/
 └── resume.html
 ```
-
 ---
 
 ## Getting Started
