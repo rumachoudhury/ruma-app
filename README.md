@@ -199,8 +199,6 @@ Full-Stack Developer
 
 💻 **GitHub:** https://github.com/rumachoudhury
 
-🌐 **Portfolio:** https://ruma-portfolio-site.vercel.app/
-
 ---
 
 ## License
