@@ -1,47 +1,48 @@
 # Ruma Choudhury | Full-Stack Developer Portfolio
 
-Personal portfolio for **Ruma Choudhury**, a MERN Stack and Full-Stack Developer focused on React.js, Next.js, TypeScript, and reliable end-to-end web systems.
+Personal portfolio for **Ruma Choudhury**, a MERN Stack and Full-Stack Developer focused on React, Next.js, TypeScript, and reliable end-to-end web experiences.
 
-The site presents selected projects, technical strengths, a detailed case-study breakdown, contact links, and a printable resume.
+The portfolio showcases selected projects, technical expertise, development services, a responsive resume, and direct contact links.
 
-## Live Links
+## Links
 
-- **Resume:** [`public/resume.html`](public/resume.html)
 - **GitHub:** [github.com/rumachoudhury](https://github.com/rumachoudhury)
 - **LinkedIn:** [linkedin.com/in/ruma-choudhury](https://www.linkedin.com/in/ruma-choudhury)
+- **Resume:** [`public/resume.html`](public/resume.html)
 
-## Highlights
+## Features
 
-- Responsive portfolio experience for desktop and mobile
-- Animated 3D CSS hero artwork with reduced-motion support
-- Eight highlighted full-stack and frontend projects
-- Technology tags and direct repository links
-- `bright-path-therapy` architecture and problem-solving breakdown
-- Printable, responsive resume page
-- Contact section with email, location, GitHub, and LinkedIn
-- Accessible navigation, focus states, semantic sections, and external-link handling
+- Responsive portfolio layout for desktop, tablet, and mobile
+- Full-screen hero with animated CSS artwork
+- Dark and light theme toggle
+- Scroll-triggered section reveal animations
+- About, Expertise, Services, Projects, Contact, and Footer sections
+- Screenshot previews for featured projects
+- Live project and code links
+- Responsive standalone resume with print support
+- Reduced-motion support for accessibility
+- Semantic sections, keyboard focus states, and external-link handling
 
-## Technology
+## Featured Projects
+
+| Project | Focus | Technologies |
+| --- | --- | --- |
+| [Full-Stack Havenfield](https://github.com/rumachoudhury/full-stack-havenfield) | Typed full-stack platform | TypeScript, Next.js, Node.js |
+| [Skylight Panthers](https://skylight-panters.vercel.app/) | Base44 portfolio experience | Base44, React |
+| [Digital Tech Hub](https://digital-tech-hub.vercel.app/) | Full-stack e-commerce platform | Next.js, TypeScript, Node.js, MongoDB |
+| [High Paid Jobs](https://high-paid-jobs-one.vercel.app/) | Job discovery experience | React, Vercel |
+| [Scale Startup](https://scale-startup-project-txlg.vercel.app/) | Startup product landing page | React, Vercel |
+| [Pearl Animation Landing Page](https://gsap-animation-landing-page-pearl.vercel.app/) | Animated visual landing page | React, GSAP, Vercel |
+
+## Tech Stack
 
 - React 19
 - Vite
 - JavaScript and JSX
 - CSS with responsive media queries and keyframe animation
+- Intersection Observer for scroll reveals
 - Space Grotesk, Manrope, and DM Mono typography
 - ESLint
-
-## Featured Projects
-
-| Project                                                                           | Focus                                 | Technologies                                     |
-| --------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------ |
-| [full-stack-havenfield](https://github.com/rumachoudhury/full-stack-havenfield)   | Typed full-stack platform             | TypeScript, Next.js, Node.js                     |
-| [Sora-LandingPage](https://github.com/rumachoudhury/Sora-LandingPage)             | Productivity workspace landing page   | Next.js, TypeScript, Tailwind CSS, Framer Motion |
-| [bright-path-therapy](https://github.com/rumachoudhury/bright-path-therapy)       | Healthcare booking and admin platform | Next.js, Express, MongoDB                        |
-| [monorepo-ecommerce-app](https://github.com/rumachoudhury/monorepo-ecommerce-app) | Ecommerce monorepo with AI automation | Next.js, Turborepo, TypeScript, n8n              |
-| school-management-dashboard                                                       | School operations dashboard           | TypeScript, React                                |
-| single-vendor-commerce                                                            | Commerce platform with AI service     | TypeScript, Python, Express, React               |
-| crm-dashboard                                                                     | CRM pipeline and contact dashboard    | JavaScript, React, Node.js                       |
-| ai-form-builder                                                                   | AI-assisted schema and form builder   | TypeScript, React, Node.js                       |
 
 ## Getting Started
 
@@ -73,7 +74,7 @@ npm run build
 npm run preview
 ```
 
-### Quality Checks
+### Lint
 
 ```bash
 npm run lint
@@ -83,27 +84,40 @@ npm run lint
 
 ```text
 src/
-├── App.jsx                 # Application entry component
-├── App.css                 # Portfolio layout, theme, and animations
-├── index.css               # Global browser and typography defaults
-├── main.jsx                # React and Vite bootstrap
+├── App.jsx                         # Application entry component
+├── App.css                         # Portfolio layout, themes, and animations
+├── index.css                       # Global browser defaults
+├── main.jsx                        # React and Vite bootstrap
+├── data/
+│   └── projects.js                 # Profile and project data
+├── components/portfolio/
+│   ├── About.jsx                   # About section
+│   ├── Contact.jsx                 # Contact CTA section
+│   ├── Expertise.jsx               # Technology list
+│   ├── Footer.jsx                  # Social links and copyright footer
+│   ├── ProjectCard.jsx             # Reusable project card
+│   ├── Projects.jsx                # Project grid
+│   ├── Reveal.jsx                  # Intersection Observer reveal wrapper
+│   └── Services.jsx                # Services section
 └── pages/
-    └── Home.jsx            # Portfolio content and section composition
+    └── Home.jsx                    # Main page composition
 
 public/
-└── resume.html             # Printable standalone resume
+├── resume.html                     # Standalone printable resume
+└── *.png                           # Project preview screenshots
 ```
 
 ## Resume
 
-The Resume buttons open the standalone page at `/resume.html`. It is responsive and includes print styles, so it can be saved as a PDF from the browser's print dialog.
+The Resume buttons open [`/resume.html`](public/resume.html), a responsive standalone resume page with print styles. Use the browser print dialog to save it as a PDF.
 
 ## Contact
 
 **Ruma Choudhury**  
-Ronkonkoma, NY 11779  
-[rumachoudhury7862@gmail.com](mailto:rumachoudhury7862@gmail.com)
+Full-Stack Developer<br />
+[rumachoudhury7862@gmail.com](mailto:rumachoudhury7862@gmail.com)<br />
+[GitHub](https://github.com/rumachoudhury) · [LinkedIn](https://www.linkedin.com/in/ruma-choudhury)
 
 ## License
 
-This repository is a personal portfolio project. Project descriptions and brand content are for portfolio presentation purposes.
+This repository is a personal portfolio project. Project descriptions, screenshots, and brand content are presented for portfolio purposes.
