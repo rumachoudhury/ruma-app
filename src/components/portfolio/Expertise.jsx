@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const expertise = [
   "HTML5",
   "CSS3",
@@ -15,7 +17,7 @@ const expertise = [
 
 export default function Expertise() {
   return (
-    <section className="expertise-section" id="expertise">
+    <Reveal as="section" className="expertise-section" id="expertise">
       <div className="section-heading">
         <div>
           <p className="eyebrow">My Expertise</p>
@@ -31,6 +33,6 @@ export default function Expertise() {
           </div>
         ))}
       </div>
-    </section>
+    </Reveal>
   );
 }

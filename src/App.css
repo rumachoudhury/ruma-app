@@ -477,6 +477,17 @@ nav a:focus-visible {
 .contact-section .footer-bottom {
   animation-delay: 0.32s;
 }
+.reveal:not(.is-visible) > * {
+  animation: none !important;
+  opacity: 0;
+  transform: translateY(22px);
+}
+.reveal:not(.is-visible) .project-card {
+  animation: none;
+}
+.reveal.is-visible .project-card {
+  animation-name: rise-in;
+}
 .eyebrow,
 .index-label {
   color: var(--muted);

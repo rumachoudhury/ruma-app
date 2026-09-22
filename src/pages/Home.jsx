@@ -2,6 +2,7 @@ import { useState } from "react";
 import About from "../components/portfolio/About";
 import Expertise from "../components/portfolio/Expertise";
 import Projects from "../components/portfolio/Projects";
+import Reveal from "../components/portfolio/Reveal";
 import Services from "../components/portfolio/Services";
 import { PROFILE as profile } from "../data/projects";
 
@@ -112,7 +113,7 @@ function Home() {
       <Expertise />
       <Services />
 
-      <section className="work-section" id="work">
+      <Reveal as="section" className="work-section" id="work">
         <div className="section-heading">
           <div>
             <p className="eyebrow">Selected Work</p>
@@ -121,9 +122,9 @@ function Home() {
           <span className="index-label">Index 01—06</span>
         </div>
         <Projects />
-      </section>
+      </Reveal>
 
-      <footer className="contact-section" id="contact">
+      <Reveal as="footer" className="contact-section" id="contact">
         <div className="contact-top">
           <p className="status">
             <span /> Available for Collaboration
@@ -155,7 +156,7 @@ function Home() {
           <span>© 2026 {profile.name}</span>
           <span>Full-Stack · MERN · Next.js · TypeScript</span>
         </div>
-      </footer>
+      </Reveal>
     </main>
   );
 }

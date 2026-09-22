@@ -1,4 +1,5 @@
 import { PROFILE as profile } from "../../data/projects";
+import Reveal from "./Reveal";
 
 function Arrow() {
   return <span aria-hidden="true">↗</span>;
@@ -6,7 +7,7 @@ function Arrow() {
 
 export default function About() {
   return (
-    <section className="about-section" id="about">
+    <Reveal as="section" className="about-section" id="about">
       <div className="section-heading">
         <div>
           <p className="eyebrow">More About Me</p>
@@ -52,6 +53,6 @@ export default function About() {
           </a>
         </div>
       </div>
-    </section>
+    </Reveal>
   );
 }

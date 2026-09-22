@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const services = [
   [
     "01",
@@ -33,7 +35,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="services-section" id="services">
+    <Reveal as="section" className="services-section" id="services">
       <div className="section-heading">
         <div>
           <p className="eyebrow">My Services</p>
@@ -50,6 +52,6 @@ export default function Services() {
           </article>
         ))}
       </div>
-    </section>
+    </Reveal>
   );
 }
