@@ -1,123 +1,219 @@
-# Ruma Choudhury | Full-Stack Developer Portfolio
+# Ruma Choudhury | Full-Stack Developer
 
-Personal portfolio for **Ruma Choudhury**, a MERN Stack and Full-Stack Developer focused on React, Next.js, TypeScript, and reliable end-to-end web experiences.
+A modern, responsive developer portfolio built with **React 19 and Vite**, showcasing selected projects, technical skills, and experience.
 
-The portfolio showcases selected projects, technical expertise, development services, a responsive resume, and direct contact links.
+**Live Portfolio:** https://ruma-portfolio-site.vercel.app/
 
-## Links
+---
 
-- **GitHub:** [github.com/rumachoudhury](https://github.com/rumachoudhury)
-- **LinkedIn:** [linkedin.com/in/ruma-choudhury](https://www.linkedin.com/in/ruma-choudhury)
-- **Resume:** [`public/resume.html`](public/resume.html)
+## About
 
-## Features
+I'm a Full-Stack Developer focused on building modern, responsive, and user-friendly web applications.
 
-- Responsive portfolio layout for desktop, tablet, and mobile
-- Full-screen hero with animated CSS artwork
-- Dark and light theme toggle
-- Scroll-triggered section reveal animations
-- About, Expertise, Services, Projects, Contact, and Footer sections
-- Screenshot previews for featured projects
-- Live project and code links
-- Responsive standalone resume with print support
-- Reduced-motion support for accessibility
-- Semantic sections, keyboard focus states, and external-link handling
+I work with **React, Next.js, TypeScript, Node.js, Express, MongoDB, and modern UI technologies** to create clean and practical digital experiences.
 
-## Featured Projects
+---
 
-| Project | Focus | Technologies |
-| --- | --- | --- |
-| [Full-Stack Havenfield](https://github.com/rumachoudhury/full-stack-havenfield) | Typed full-stack platform | TypeScript, Next.js, Node.js |
-| [Skylight Panthers](https://skylight-panters.vercel.app/) | Base44 portfolio experience | Base44, React |
-| [Digital Tech Hub](https://digital-tech-hub.vercel.app/) | Full-stack e-commerce platform | Next.js, TypeScript, Node.js, MongoDB |
-| [High Paid Jobs](https://high-paid-jobs-one.vercel.app/) | Job discovery experience | React, Vercel |
-| [Scale Startup](https://scale-startup-project-txlg.vercel.app/) | Startup product landing page | React, Vercel |
-| [Pearl Animation Landing Page](https://gsap-animation-landing-page-pearl.vercel.app/) | Animated visual landing page | React, GSAP, Vercel |
+## Selected Work
+
+### Built to be useful.
+
+**Index 01—06**
+
+### 01 — Full-Stack Havenfield
+
+A full-stack platform built with TypeScript across the client, server, and data layers.
+
+**TypeScript · Next.js · Node.js**
+
+[View Live ↗](https://github.com/rumachoudhury/full-stack-havenfield) · [Code ↗](https://github.com/rumachoudhury/full-stack-havenfield)
+
+### 02 — Skylight Panthers
+
+A polished, responsive portfolio with a bold visual design.
+
+**Base44 · React**
+
+[View Live ↗](https://skylight-panters.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
+
+### 03 — Digital Tech Hub
+
+A full-stack e-commerce platform with authentication, cart, and payment integration.
+
+**Next.js · TypeScript · MongoDB · Node.js · Tailwind CSS**
+
+[View Live ↗](https://digital-tech-hub.vercel.app/) · [Code ↗](https://github.com/rumachoudhury/digital-tech-hub)
+
+### 04 — High Paid Jobs
+
+A focused job discovery platform for exploring high-value opportunities.
+
+**React · Vercel**
+
+[View Live ↗](https://high-paid-jobs-one.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
+
+### 05 — Scale Startup
+
+A modern startup landing page designed around growth and product presentation.
+
+**React · Vercel**
+
+[View Live ↗](https://scale-startup-project-txlg.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
+
+### 06 — Pearl Animation Landing Page
+
+An expressive landing page featuring smooth GSAP animations and responsive design.
+
+**React · GSAP · Vercel**
+
+[View Live ↗](https://gsap-animation-landing-page-pearl.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
+
+---
 
 ## Tech Stack
 
-- React 19
-- Vite
-- JavaScript and JSX
-- CSS with responsive media queries and keyframe animation
-- Intersection Observer for scroll reveals
-- Space Grotesk, Manrope, and DM Mono typography
-- ESLint
+### Frontend
 
-## Getting Started
+* React
+* Next.js
+* TypeScript
+* JavaScript
+* HTML5
+* CSS3
+* Tailwind CSS
+* Sass
+* shadcn/ui
+* Material UI
+* Ant Design
 
-### Prerequisites
+### Backend
 
-- Node.js 18 or newer
-- npm
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* Prisma
+* REST APIs
+* JWT Authentication
 
-### Installation
+### Tools
 
-```bash
-git clone https://github.com/rumachoudhury/ruma-app.git
-cd ruma-app
-npm install
-```
+* Git
+* GitHub
+* VS Code
+* Postman
+* Cypress
+* Vercel
+* Figma
 
-### Development
+---
 
-```bash
-npm run dev
-```
+## Features
 
-Open the local URL shown in the terminal, usually `http://localhost:5173`.
+* Responsive design
+* Modern UI
+* Reusable React components
+* Interactive animations
+* Responsive navigation
+* Project showcase
+* Contact section
+* Resume page
+* Mobile, tablet, and desktop support
+* Accessible and semantic HTML
 
-### Production Build
-
-```bash
-npm run build
-npm run preview
-```
-
-### Lint
-
-```bash
-npm run lint
-```
+---
 
 ## Project Structure
 
 ```text
 src/
-├── App.jsx                         # Application entry component
-├── App.css                         # Portfolio layout, themes, and animations
-├── index.css                       # Global browser defaults
-├── main.jsx                        # React and Vite bootstrap
+├── components/
+│   └── portfolio/
 ├── data/
-│   └── projects.js                 # Profile and project data
-├── components/portfolio/
-│   ├── About.jsx                   # About section
-│   ├── Contact.jsx                 # Contact CTA section
-│   ├── Expertise.jsx               # Technology list
-│   ├── Footer.jsx                  # Social links and copyright footer
-│   ├── ProjectCard.jsx             # Reusable project card
-│   ├── Projects.jsx                # Project grid
-│   ├── Reveal.jsx                  # Intersection Observer reveal wrapper
-│   └── Services.jsx                # Services section
-└── pages/
-    └── Home.jsx                    # Main page composition
+│   └── projects.js
+├── pages/
+│   └── Home.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
 
 public/
-├── resume.html                     # Standalone printable resume
-└── *.png                           # Project preview screenshots
+└── resume.html
 ```
+
+---
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rumachoudhury/ruma-app.git
+```
+
+Go to the project folder:
+
+```bash
+cd ruma-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
 
 ## Resume
 
-The Resume buttons open [`/resume.html`](public/resume.html), a responsive standalone resume page with print styles. Use the browser print dialog to save it as a PDF.
+My resume is available directly from the portfolio:
+
+**[View Resume](https://ruma-portfolio-site.vercel.app/resume.html)**
+
+---
 
 ## Contact
 
-**Ruma Choudhury**  
-Full-Stack Developer<br />
-[rumachoudhury7862@gmail.com](mailto:rumachoudhury7862@gmail.com)<br />
-[GitHub](https://github.com/rumachoudhury) · [LinkedIn](https://www.linkedin.com/in/ruma-choudhury)
+**Ruma Choudhury**
+
+Full-Stack Developer
+
+📧 **Email:** [rumachoudhury7862@gmail.com](mailto:rumachoudhury7862@gmail.com)
+
+💻 **GitHub:** https://github.com/rumachoudhury
+
+🌐 **Portfolio:** https://ruma-portfolio-site.vercel.app/
+
+---
 
 ## License
 
-This repository is a personal portfolio project. Project descriptions, screenshots, and brand content are presented for portfolio purposes.
+This project is for personal portfolio and demonstration purposes.
