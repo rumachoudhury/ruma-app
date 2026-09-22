@@ -37,7 +37,14 @@ export const PROJECTS = [
     title: "Digital Tech Hub",
     summary:
       "A full-stack e-commerce platform featuring product search, user authentication, cart functionality, and secure checkout with payment integration.",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "MongoDB", "shadcn/ui"],
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "shadcn/ui",
+    ],
     url: "https://digital-tech-hub.vercel.app/",
     repoUrl: "https://github.com/rumachoudhury/digital-tech-hub",
     image: "/digital-tech-hub.png",

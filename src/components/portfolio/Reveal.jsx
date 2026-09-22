@@ -1,13 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function Reveal({ as: Element = "div", children, className = "", ...props }) {
+export default function Reveal({
+  as: Element = "div",
+  children,
+  className = "",
+  ...props
+}) {
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const element = elementRef.current;
 
-    if (!element || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      !element ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       setIsVisible(true);
       return undefined;
     }

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import About from "../components/portfolio/About";
+import Contact from "../components/portfolio/Contact";
 import Expertise from "../components/portfolio/Expertise";
+import Footer from "../components/portfolio/Footer";
 import Projects from "../components/portfolio/Projects";
 import Reveal from "../components/portfolio/Reveal";
 import Services from "../components/portfolio/Services";
@@ -64,15 +66,15 @@ function Home() {
             Hi, I&apos;m
             <br />
             <em>Ruma Choudhury</em>
-            <span className="typing-cursor" aria-hidden="true">|</span>
+            <span className="typing-cursor" aria-hidden="true">
+              |
+            </span>
           </h1>
-          <p className="role">
-            MERN Stack Developer
-          </p>
+          <p className="role">MERN Stack Developer</p>
           <p className="hero-copy">
             I create modern, scalable web applications using MongoDB, Express,
-            React, and Node.js. Passionate about clean code and exceptional
-            user experiences.
+            React, and Node.js. Passionate about clean code and exceptional user
+            experiences.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href="#work">
@@ -124,38 +126,11 @@ function Home() {
         <Projects />
       </Reveal>
 
-      <Reveal as="footer" className="contact-section" id="contact">
-        <div className="contact-top">
-          <p className="status">
-            <span /> Available for Collaboration
-          </p>
-          <p>
-            {profile.location} <b>—</b>{" "}
-            <time>
-              {new Intl.DateTimeFormat("en-US", {
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: false,
-                timeZone: "America/New_York",
-              }).format(new Date())}
-            </time>{" "}
-            local
-          </p>
-        </div>
-        <a className="email-link" href={`mailto:${profile.email}`}>
-          Email Me <Arrow />
-          <small>({profile.email})</small>
-        </a>
-        <div className="footer-links">
-          <ExternalLink href={profile.github}>GitHub</ExternalLink>
-          <ExternalLink href={profile.linkedin}>LinkedIn</ExternalLink>
-          <a href={`mailto:${profile.email}`}>Email</a>
-          <span>New York</span>
-        </div>
-        <div className="footer-bottom">
-          <span>© 2026 {profile.name}</span>
-          <span>Full-Stack · MERN · Next.js · TypeScript</span>
-        </div>
+      <Reveal>
+        <Contact />
+      </Reveal>
+      <Reveal>
+        <Footer />
       </Reveal>
     </main>
   );
