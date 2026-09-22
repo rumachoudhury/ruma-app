@@ -48,7 +48,7 @@ export const PROJECTS = [
       "A focused job discovery experience designed to make high-value opportunities easier to scan and explore.",
     tech: ["React", "Vercel"],
     url: "https://high-paid-jobs-one.vercel.app/",
-    image: "/Screenshot 2026-09-21 at 10.39.31 PM.png",
+    image: "/High Paid Jobs.png",
     accent: "orange",
   },
   {
@@ -58,7 +58,7 @@ export const PROJECTS = [
       "A startup-focused product experience with a sharp landing page and a clear path from idea to growth.",
     tech: ["React", "Vercel"],
     url: "https://scale-startup-project-txlg.vercel.app/",
-    image: "/Screenshot 2026-09-21 at 10.39.38 PM.png",
+    image: "/Screenshot 2026-09-21 at 11.05.04 PM.png",
     accent: "pink",
   },
   {
