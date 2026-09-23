@@ -8,165 +8,87 @@ A modern, responsive developer portfolio built with **React 19 and Vite**, showc
 
 ### Built to be useful.
 
-**Index 01—06**
-
-### 01 — Full-Stack Havenfield
-
+**01 — Full-Stack Havenfield**
 A full-stack platform built with TypeScript across the client, server, and data layers.
 
 **TypeScript · Next.js · Node.js**
+[View Project ↗](https://github.com/rumachoudhury/full-stack-havenfield)
 
-[View Live ↗](https://github.com/rumachoudhury/full-stack-havenfield) · [Code ↗](https://github.com/rumachoudhury/full-stack-havenfield)
-
-### 02 — Skylight Panthers
-
+**02 — Skylight Panthers**
 A polished, responsive portfolio with a bold visual design.
 
 **Base44 · React**
+[View Live ↗](https://skylight-panters.vercel.app/)
 
-[View Live ↗](https://skylight-panters.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
-
-### 03 — Digital Tech Hub
-
+**03 — Digital Tech Hub**
 A full-stack e-commerce platform with authentication, cart, and payment integration.
 
 **Next.js · TypeScript · MongoDB · Node.js · Tailwind CSS**
-
 [View Live ↗](https://digital-tech-hub.vercel.app/) · [Code ↗](https://github.com/rumachoudhury/digital-tech-hub)
 
-### 04 — High Paid Jobs
-
+**04 — High Paid Jobs**
 A focused job discovery platform for exploring high-value opportunities.
 
 **React · Vercel**
+[View Live ↗](https://high-paid-jobs-one.vercel.app/)
 
-[View Live ↗](https://high-paid-jobs-one.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
-
-### 05 — Scale Startup
-
-A modern startup landing page designed around growth and product presentation.
+**05 — Scale Startup**
+A modern startup landing page focused on product presentation and growth.
 
 **React · Vercel**
+[View Live ↗](https://scale-startup-project-txlg.vercel.app/)
 
-[View Live ↗](https://scale-startup-project-txlg.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
-
-### 06 — Pearl Animation Landing Page
-
+**06 — Pearl Animation Landing Page**
 An expressive landing page featuring smooth GSAP animations and responsive design.
 
 **React · GSAP · Vercel**
-
-[View Live ↗](https://gsap-animation-landing-page-pearl.vercel.app/) · [Code ↗](https://github.com/rumachoudhury)
+[View Live ↗](https://gsap-animation-landing-page-pearl.vercel.app/)
 
 ---
 
 ## Tech Stack
 
-### Frontend
+**Frontend:** React · Next.js · TypeScript · JavaScript · Tailwind CSS · Sass · shadcn/ui
 
-* React
-* Next.js
-* TypeScript
-* JavaScript
-* HTML5
-* CSS3
-* Tailwind CSS
-* Sass
-* shadcn/ui
-* Material UI
-* Ant Design
+**Backend:** Node.js · Express · MongoDB · Mongoose · Prisma · REST APIs · JWT
 
-### Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* Prisma
-* REST APIs
-* JWT Authentication
-
-### Tools
-
-* Git
-* GitHub
-* VS Code
-* Postman
-* Cypress
-* Vercel
-* Figma
+**Tools:** Git · GitHub · VS Code · Postman · Cypress · Vercel · Figma
 
 ---
+
 ## Features
 
 * Responsive design
 * Modern UI
 * Reusable React components
+* Dark and light theme
 * Interactive animations
-* Dark and light theme toggle
-* Scroll-triggered section reveals
-* Web3Forms-powered contact form
 * Responsive navigation
 * Project showcase
 * Resume page
-* Mobile, tablet, and desktop support
-* Accessible and semantic HTML
+* Accessible semantic HTML
+* Web3Forms contact form
 
-### Environment Variables
+---
 
-Create a `.env` file in the project root and add your Web3Forms access key:
+## Environment Variables
+
+Create a `.env` file in the project root:
 
 ```env
 VITE_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
 ```
 
-The `.env` file is ignored by Git. Never commit the real access key to the repository.
+The `.env` file is excluded from Git. Never commit your real access key.
 
----
-
-## Project Structure
-
-```text
-src/
-├── components/
-│   └── portfolio/
-├── data/
-│   └── projects.js
-├── pages/
-│   └── Home.jsx
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
-
-public/
-└── resume.html
-```
 ---
 
 ## Getting Started
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/rumachoudhury/ruma-app.git
-```
-
-Go to the project folder:
-
-```bash
 cd ruma-app
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
@@ -178,15 +100,10 @@ http://localhost:5173
 
 ---
 
-## Build for Production
+## Build
 
 ```bash
 npm run build
-```
-
-Preview the production build:
-
-```bash
 npm run preview
 ```
 
@@ -194,25 +111,21 @@ npm run preview
 
 ## Resume
 
-My resume is available directly from the portfolio:
-
-**[View Resume](https://ruma-portfolio-site.vercel.app/resume.html)**
+[View Resume ↗](https://ruma-portfolio-site.vercel.app/resume.html)
 
 ---
 
 ## Contact
 
 **Ruma Choudhury**
-
 Full-Stack Developer
 
-📧 **Email:** [rumachoudhury7862@gmail.com](mailto:rumachoudhury7862@gmail.com)
+📧 [rumachoudhury7862@gmail.com](mailto:rumachoudhury7862@gmail.com)
+💻 [GitHub](https://github.com/rumachoudhury)
 
-💻 **GitHub:** https://github.com/rumachoudhury
+The portfolio contact form uses **[Web3Forms](https://web3forms.com/)** to securely deliver contact form submissions by email.
 
 ---
-
-The website contact form uses [Web3Forms](https://web3forms.com/) to deliver messages by email. Form submissions include the sender name, email address, and message.
 
 ## License
 
