@@ -97,19 +97,30 @@ An expressive landing page featuring smooth GSAP animations and responsive desig
 * Figma
 
 ---
-
 ## Features
 
 * Responsive design
 * Modern UI
 * Reusable React components
 * Interactive animations
+* Dark and light theme toggle
+* Scroll-triggered section reveals
+* Web3Forms-powered contact form
 * Responsive navigation
 * Project showcase
-* Contact section
 * Resume page
 * Mobile, tablet, and desktop support
 * Accessible and semantic HTML
+
+### Environment Variables
+
+Create a `.env` file in the project root and add your Web3Forms access key:
+
+```env
+VITE_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
+```
+
+The `.env` file is ignored by Git. Never commit the real access key to the repository.
 
 ---
 
@@ -200,6 +211,8 @@ Full-Stack Developer
 💻 **GitHub:** https://github.com/rumachoudhury
 
 ---
+
+The website contact form uses [Web3Forms](https://web3forms.com/) to deliver messages by email. Form submissions include the sender name, email address, and message.
 
 ## License
 

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { PROFILE as profile } from "../../data/projects";
 
 function Arrow() {
@@ -5,6 +6,36 @@ function Arrow() {
 }
 
 export default function Contact() {
+  const [status, setStatus] = useState("idle");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatus("sending");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+    formData.append("subject", `New portfolio message from ${formData.get("name")}`);
+    formData.append("from_name", "Ruma Portfolio");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json();
+
+      if (!result.success) {
+        throw new Error(result.message || "Unable to send message");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <section className="contact-section" id="contact">
       <div className="contact-inner">
@@ -34,10 +65,27 @@ export default function Contact() {
               I&apos;d love to hear what you&apos;re working on.
             </p>
           </div>
-          <a className="email-link" href={`mailto:${profile.email}`}>
-            Email Me <Arrow />
-            <small>{profile.email}</small>
-          </a>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <label>
+              Name
+              <input name="name" type="text" autoComplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autoComplete="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required />
+            </label>
+            <button className="primary-button contact-submit" type="submit" disabled={status === "sending"}>
+              {status === "sending" ? "Sending..." : "Send Message"} <Arrow />
+            </button>
+            <p className={`form-status ${status}`} role="status" aria-live="polite">
+              {status === "success" && "Message sent. Thank you for reaching out."}
+              {status === "error" && `Something went wrong. Email me directly at ${profile.email}.`}
+            </p>
+          </form>
         </div>
       </div>
     </section>
