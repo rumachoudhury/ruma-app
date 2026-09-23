@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { PROFILE as profile } from "../../data/projects";
 
-function Arrow() {
-  return <span aria-hidden="true">↗</span>;
-}
-
 export default function Contact() {
   const [status, setStatus] = useState("idle");
 
@@ -57,13 +53,23 @@ export default function Contact() {
           </p>
         </div>
         <div className="contact-content">
-          <div>
+          <div className="contact-intro">
             <p className="eyebrow">Start a conversation</p>
             <h2>Let&apos;s build something useful.</h2>
             <p className="contact-copy">
               Have a product idea, a project in progress, or a problem to solve?
               I&apos;d love to hear what you&apos;re working on.
             </p>
+            <div className="contact-details">
+              <a href={`mailto:${profile.email}`}>
+                <span>Email</span>
+                {profile.email}
+              </a>
+              <div>
+                <span>Based in</span>
+                New York, USA
+              </div>
+            </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
             <label>
@@ -79,7 +85,7 @@ export default function Contact() {
               <textarea name="message" rows="4" required />
             </label>
             <button className="primary-button contact-submit" type="submit" disabled={status === "sending"}>
-              {status === "sending" ? "Sending..." : "Send Message"} <Arrow />
+              {status === "sending" ? "Sending..." : "Send Message"} <span aria-hidden="true">↗</span>
             </button>
             <p className={`form-status ${status}`} role="status" aria-live="polite">
               {status === "success" && "Message sent. Thank you for reaching out."}
